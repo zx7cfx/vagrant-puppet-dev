@@ -1,0 +1,24 @@
+---
+- name:       master1.local
+  box:        master1.local
+  box_url:    file://../images/centos7-new.box
+  autostart:  true
+  ip:         192.168.56.80
+  ram:        512
+  public_key: ../keys/id_rsa.vagrant.pub
+
+- name:       node1.local
+  box:        node1.local
+  box_url:    file://../images/centos7-new.box
+  autostart:  true
+  ip:         192.168.56.81
+  ram:        256
+  public_key: ../keys/id_rsa.vagrant.pub
+
+- name:       node2.local
+  box:        node2.local
+  box_url:    file://../images/centos7-new.box
+  autostart:  true
+  ip:         192.168.56.82
+  ram:        256
+  public_key: ../keys/id_rsa.vagrant.pub
